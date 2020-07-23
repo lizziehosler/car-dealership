@@ -1,18 +1,18 @@
-require_relative 'Car'
+require_relative 'car'
 
 class CarLot
-    attr_accessor :inventory 
+    attr_accessor :inventory
+
     def initialize
         @inventory = []
     end
 
-    def add_car(car)
-        @inventory.push(car)
+    def add_vehicle(vehicle)
+        @inventory.push(vehicle)
 
         puts "Inventory:"
-
-        @inventory.each do |car|
-            puts car
+        @inventory.each do |vehicle|
+            puts vehicle
         end
     end
 
