@@ -2,6 +2,8 @@ require_relative 'car_lot'
 require_relative 'menu'
 
 lizzies_lot = CarLot.new
+car1 = Car.new
+lizzies_lot.add_car(car1)
 Menu.start_menu(lizzies_lot)
 
 
