@@ -25,9 +25,10 @@ loop do
     when "2"
         lizzies_lot.list_inventory
     when "3"
-        puts "Please indicate which car you would like to remove:"
-        lizzies_lot.list_inventory
-        delete_car = DeleteCar.new
+        puts "This option is not yet available."
+        #puts "Please indicate which car you would like to remove:"
+        #lizzies_lot.list_inventory
+        #delete_car = DeleteCar.new
     when "quit", "exit"
         break
     else  
