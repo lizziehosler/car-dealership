@@ -4,7 +4,7 @@ require_relative '../lib/car_dealership/car_lot'
 require_relative '../lib/car_dealership/car'
 require_relative '../lib/car_dealership/add_car'
 require_relative '../lib/car_dealership/used_car'
-require_relative '../lib/car_dealership/delete_car'
+
 
 lizzies_lot = CarDealership::CarLot.new
 #car1 = Car.new
@@ -15,7 +15,7 @@ loop do
     puts "\nWelcome to the Car Place. Would you like to:
         1. Add a car
         2. View inventory
-        3. Remove a car
+        3. Sale a car
         ('quit' to exit)"
     answer = gets.chomp.downcase
 
@@ -28,9 +28,9 @@ loop do
         lizzies_lot.list_inventory
     when "3"
         #puts "This option is not yet available."
-        puts "Please indicate which car you would like to remove:"
-        lizzies_lot.list_inventory
-        delete_car = CarDealership::DeleteCar.new
+        # user selects 3, goes and runs logic from sell_car located on car_lot
+        lizzies_lot.sell_car
+
     when "quit", "exit"
         break
     else  
