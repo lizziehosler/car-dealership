@@ -15,7 +15,7 @@ loop do
     puts "\nWelcome to the Car Place. Would you like to:
         1. Add a car
         2. View inventory
-        3. Sale a car
+        3. Sell a car
         ('quit' to exit)"
     answer = gets.chomp.downcase
 
